@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from .anchor_encoder import AnchorEncoder
+from anchor_encoder import AnchorEncoder
 from torchvision.ops import batched_nms
 
 

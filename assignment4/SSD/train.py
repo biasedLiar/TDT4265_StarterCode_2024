@@ -65,6 +65,7 @@ def print_config(cfg):
 def train(config_path: Path, evaluate_only: bool):
     logger.logger.DEFAULT_SCALAR_LEVEL = logger.logger.DEBUG
     cfg = utils.load_config(config_path)
+    print("Hei----------------------\n\n-------------------------------------------")
     print_config(cfg)
 
     tops.init(cfg.output_dir)
@@ -118,4 +119,5 @@ def train(config_path: Path, evaluate_only: bool):
 
 
 if __name__ == "__main__":
+    print("Starting bad function")
     train()
